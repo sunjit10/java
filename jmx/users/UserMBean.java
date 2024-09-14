@@ -1,4 +1,4 @@
-package jmx;
+package jmx.users;
 
 // MBean interface that lists all exposed Attributes and Operations
 public interface UserMBean {

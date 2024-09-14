@@ -1,4 +1,4 @@
-package jmx;
+package jmx.users;
 
 // Managed resource "User"
 public class User implements UserMBean {
