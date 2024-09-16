@@ -15,15 +15,15 @@ public class QueueSample {
         this.size = size; 
         this.head = head; 
     } 
-         
+    
     public Date getDate() { 
         return date; 
     } 
-         
+    
     public int getSize() { 
         return size; 
     } 
-         
+    
     public String getHead() { 
         return head; 
     } 
