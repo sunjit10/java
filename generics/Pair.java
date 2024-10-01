@@ -14,7 +14,7 @@ public class Pair<T,S> {
 	return value1;
     }
     
-    public S getTwo(){
+    public S getTwo() {
 	return value2;
     }
 

@@ -8,7 +8,9 @@ public class PairDemo {
 	Pair<String, Integer> pair2 = new Pair<>("El Paso", 700);
 
 	System.out.println(pair1);
-	System.out.println(pair2);
+	System.out.println(pair1.getOne());
+	System.out.println(pair1.getTwo());
 	
+	System.out.println(pair2);
     }
 }
