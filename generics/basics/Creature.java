@@ -13,4 +13,8 @@ public class Creature {
 	return name;
     }
     
+    public void feed() {
+	System.out.println("feeding " + name);
+    }
+   
 }
