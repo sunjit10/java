@@ -1,3 +1,4 @@
+
 package generics.bounds;
 
 import generics.basics.Creature;
@@ -18,7 +19,8 @@ public class BoundsDemo {
 	    m.feed();
 	}
     }
-    
+
+
     private static void feedMammals() {
 	List<Mammal> listOfMammals = new ArrayList<>();
 	listOfMammals.add(new Mammal("dolphin"));
@@ -37,6 +39,6 @@ public class BoundsDemo {
     
     public static void main(String[] args) {
 	feedMammals();
-	feedCats();
+	feedCats();	
     }
 }
