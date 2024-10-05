@@ -1,5 +1,9 @@
 package basics;
 
+/*
+ *  1. What does !!someBoolean do
+ *  2. Is this valid:  boolean isSame = 3 == 3;
+ */
 public class TestBoolean {
     public static void main(String[] args) {
 	testNumbers();
@@ -12,7 +16,7 @@ public class TestBoolean {
 	boolean isEqual = i == j;
 	boolean isNotEqual = i != j;
 	System.out.println("isEqual " + isEqual + " isNotEqual " + isNotEqual);
-
+	
 	if (!!isEqual) {
 	    System.out.println("This shows that !! cancels out and !!isEqual is same as isEqual");
 	}   

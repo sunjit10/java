@@ -1,5 +1,8 @@
-package basics;
+package basics.arrays;
 
+/*
+ * What happens when you only initialize few elements of Array
+ */
 public class ArraysEmpty {
     public static void main(String[] args) {
 	someEmptyInts();

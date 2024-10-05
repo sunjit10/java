@@ -1,5 +1,8 @@
 package basics.inner;
 
+/*
+ * Uses the Runnable interface to demonstrate Anonymous class
+ */
 public class AnonymousDemo {
 
     private String greetings = "Good ";

@@ -1,13 +1,18 @@
 package basics.core.staticstuff;
 
+
+/*
+   - Can a non-static method return static value
+   - Can a static method return non-static value
+ */
 public class Cat {
-
+    
     private String name;
-
+    
     static String FOOD = "Cat Food";
     private static int numCats = 0;
     private int catId = 0;
-
+    
     public Cat(String name) {
 	this.name = name;
 	numCats++;
@@ -30,7 +35,7 @@ public class Cat {
     public String getCatFood() {
 	return FOOD;
     }
-
+    
     /*
       Cannot have a static method use non-static variable
     public static String getCatName() {
