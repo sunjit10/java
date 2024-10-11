@@ -14,6 +14,8 @@ public class AutoCloseableDemo implements AutoCloseable {
     public static void main(String[] args) {
 	AutoCloseableDemo auto = new AutoCloseableDemo("madeuphost:9000");
 	auto.createConnection();
+
+	// If you don't have the line below, you get a warning about not calling close()
 	auto.close();
     }
     
