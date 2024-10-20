@@ -16,7 +16,7 @@ public class LinkedVsTreeMap {
 	seasons.put(1, "Spring");
 	seasons.put(4, "Winter");
 	seasons.put(2, "Summer");
-
+	
 	seasons.forEach((k,v) -> System.out.println(k + " : " + v));
 
 	seasons.clear();
