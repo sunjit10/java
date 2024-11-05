@@ -9,7 +9,7 @@ public class TryWithResourcesDemo {
 	oldSchoolExceptionFinally();
 	usingTryWithResources();
     }
-
+    
     private static void oldSchoolExceptionFinally() {
 	Scanner scanner = null;
 	try {
@@ -37,5 +37,4 @@ public class TryWithResourcesDemo {
 	    e.printStackTrace();
 	} 
     }
-    
 }
