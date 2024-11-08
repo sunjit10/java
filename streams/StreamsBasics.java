@@ -18,7 +18,8 @@ public class StreamsBasics {
 	Stream.of(1,5,2,3).forEach(System.out::println);
 	
 	System.out.println();
-	
+
+	// Without limit(n), it would be an never ending output
 	Stream.generate(() -> "hello").limit(3).forEach(System.out::println);
     }
 }

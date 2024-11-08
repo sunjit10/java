@@ -3,17 +3,17 @@ package streams;
 import java.util.List;
 
 class USStates {
-
+    
     private String name;
-
+    
     public USStates(String name) { this.name = name; }
-
+    
     public String getName() { return name; }
-
+    
     public void setName(String name) { this.name = name; }
-
+    
     public String toString() { return "state is " + name; }
-
+    
 }
 
 public class TransformingStreams {
@@ -27,6 +27,7 @@ public class TransformingStreams {
 	    .forEach(System.out::println);
 
 	System.out.println("-----------------");
+
 	// Using method reference
 	usStates
 	    .stream()
