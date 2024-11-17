@@ -4,4 +4,6 @@ hola
 howdy
 hey you
 aloha
+how are you doing
+howdy mate
 helloooooooo

@@ -1,4 +1,4 @@
-package streams;
+package streams.reduce;
 
 import java.util.stream.IntStream;
 
