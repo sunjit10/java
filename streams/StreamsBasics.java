@@ -14,12 +14,16 @@ public class StreamsBasics {
 	List.of(10,30,20).stream().forEach(System.out::println);
 	
 	System.out.println();
-	
+ 
+	// forEach is a terminal operation, it closes the stream
+	// Other examples are count/collect
 	Stream.of(1,5,2,3).forEach(System.out::println);
 	
 	System.out.println();
 
 	// Without limit(n), it would be an never ending output
+	// Stream.generate : initilization, limit: intermediary, forEach: terminate
+	// Note: There can be one or many intermediary chained together
 	Stream.generate(() -> "hello").limit(3).forEach(System.out::println);
     }
 }

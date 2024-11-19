@@ -14,5 +14,19 @@ public class PeekBasics {
 	    .peek(n -> System.out.println("Squarred value: " + n))
 	    .collect(Collectors.toList());
 
+	System.out.println(listOfNums);
+
+	System.out.println("-----------------------------------");
+	
+	// You will see that map, peek will not get executed. Reason is that compiler is smart
+	// enough to realize that all we care about is count, why bother doing stuff in between
+	// if you just need to know the size
+	var sizeOfList =
+	    nums
+	    .stream()
+	    .map(o -> String.valueOf(o))
+	    .peek(n -> System.out.println(n + " : " + n.getClass()))
+	    .count(); 	// count is another terminal method like collect.
+	System.out.println("size of list: " + sizeOfList);
     }
 }

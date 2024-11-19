@@ -8,7 +8,8 @@ public class GeneratingStreamFromTextFile {
     public static void main(String[] args) throws IOException {
 
 	// Make sure path is correct
-	Files.lines(Paths.get("/home/sunjit/dev/java/streams/blah.txt")).forEach(System.out::println);
+	Files.lines(Paths.get("/home/sunjit/dev/java/streams/blah.txt"))
+	    .forEach(System.out::println);
 	
     }
 }

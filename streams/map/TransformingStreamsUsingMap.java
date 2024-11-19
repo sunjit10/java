@@ -1,4 +1,4 @@
-package streams;
+package streams.map;
 
 import java.util.List;
 
@@ -16,10 +16,10 @@ class USStates {
     
 }
 
-public class TransformingStreams {
+public class TransformingStreamsUsingMap {
     public static void main(String[] args) {
 	var usStates = List.of("New York", "Rhode Island", "Michigan", "Wisconsin", "Texas", "Nevada", "Arizona", "Utah");
-
+	
 	// Using lambda
 	usStates
 	    .stream()

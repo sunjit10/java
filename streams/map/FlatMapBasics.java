@@ -1,4 +1,4 @@
-package streams;
+package streams.map;
 
 import java.util.List;
 import java.util.Set;
@@ -13,6 +13,7 @@ public class FlatMapBasics {
 
 	System.out.println("Now flattening it");
 
+	// here we combine multiple individual streams into a main stream
 	list.stream().flatMap(s -> s.stream()).forEach(System.out::println);
     }
 }
