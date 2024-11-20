@@ -4,7 +4,7 @@ import java.util.stream.IntStream;
 
 public class ReduceToCalculateFactorial {
     public static void main(String[] args) {
-
+	
 	int findFactorialFor = 5;
 
 	int factorialValue = IntStream
