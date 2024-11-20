@@ -12,7 +12,7 @@ class Person {
     Person(String name) {
 	this.name = name;
     }
-
+    
     public String toString() {
 	return name;
     }
@@ -22,11 +22,11 @@ public class MapsForCustomObjects {
     public static void main(String[] args) {
 	Map<Person, Integer> persons1 = new HashMap<>();
 	Map<Person, Integer> persons2 = new LinkedHashMap<>();
-
+	
 	// For TreeMap to work, it needs to know the Natural Order
 	// To achieve that, Person must implement Comparable interface
 	//Map<Person, Integer> persons3 = new TreeMap<>();
-
+	
 	handlePersons(persons1);
 	handlePersons(persons2);
 	//handlePersons(persons3);
@@ -39,6 +39,5 @@ public class MapsForCustomObjects {
 	persons.put(new Person("Adam"), 15);
 	
 	persons.forEach((k,v) -> System.out.println(k + " : " + v));
-	
     }
 }

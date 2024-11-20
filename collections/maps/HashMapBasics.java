@@ -14,7 +14,7 @@ public class HashMapBasics {
 	parameters.put("Hello", null);
 	parameters.put("Hola", "Hola senora");
 	parameters.put("Hi", "Namaste");
-
+	
 	parameters.forEach((x,y) -> System.out.println("key " + x + " value " + y));
 	
     }
