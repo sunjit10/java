@@ -13,7 +13,7 @@ public class CollectorsBasics {
 	System.out.println("----------------------------");
 	example3();
     }
-
+    
     private static void example1() {
 	var names = List.of("Jamie", "Sean", "Jack", "Molly");
 	
