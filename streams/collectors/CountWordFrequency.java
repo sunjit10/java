@@ -17,22 +17,23 @@ import java.util.Map;
  */
 public class CountWordFrequency {
     public static void main(String[] args) throws IOException {
-	var output = Files.lines(Paths.get("/home/rishma/dev/java/streams/blah.txt"))
-	             .map(s -> s.split("[^a-zA-Z]"))
-	             .map(Arrays::asList)
-	             .flatMap(l -> l.stream())
-	             .collect(
-			      HashMap<String, Integer>::new,
-			      (map, word) -> {
-				  Integer count = map.get(word);
-				  if (count == null) {
-				      map.put(word, 1);
-				  } else {
-				      map.put(word, count + 1);
-				  }
-			      },
-			      CountWordFrequency::combine
-			      );
+	var output =
+	    Files.lines(Paths.get("/home/rishma/dev/java/streams/blah.txt"))
+	    .map(s -> s.split("[^a-zA-Z]")) // convert String to Array
+	    .map(Arrays::asList) // convert Array to List so that stream method can be used
+	    .flatMap(l -> l.stream())
+	    .collect(
+		     HashMap<String, Integer>::new,
+		     (map, word) -> {
+			 Integer count = map.get(word);
+			 if (count == null) {
+			     map.put(word, 1);
+			 } else {
+			     map.put(word, count + 1);
+			 }
+		     },
+		     CountWordFrequency::combine
+		     );
 	System.out.println(output);
 	
     }
