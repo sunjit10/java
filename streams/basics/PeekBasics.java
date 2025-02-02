@@ -1,4 +1,4 @@
-package streams.collectors;
+package streams.basics;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -17,9 +17,13 @@ public class PeekBasics {
 	System.out.println(listOfNums);
 
 	System.out.println("-----------------------------------");
-	
+	peekBeingIgnored();
+    }
+
+    private static void peekBeingIgnored() {
+	var nums = List.of(10,20,60,20,90,50);
 	// You will see that map, peek will not get executed. Reason is that compiler is smart
-	// enough to realize that all we care about is count, why bother doing stuff in between
+	// enough to realize that all we care about is count, why bother stuff in between
 	// if you just need to know the size
 	var sizeOfList =
 	    nums
