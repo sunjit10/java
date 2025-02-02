@@ -6,7 +6,7 @@ import java.util.function.UnaryOperator;
  UnaryOperator is an extension of Function where it accepts
  one Input parameter and outputs one parameter OF THE SAME TYPE
  */
-public class UnaryOperatorLambdaBasics {
+public class UnaryOperatorBasics {
     public static void main(String[] args) {
 	UnaryOperator<String> smithFamily = s -> s +  " Smith";
 	

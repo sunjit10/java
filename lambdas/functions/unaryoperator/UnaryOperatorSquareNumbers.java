@@ -1,4 +1,4 @@
-package lambdas.functions;
+package lambdas.functions.unaryoperator;
 
 import java.util.List;
 import java.util.ArrayList;
