@@ -2,7 +2,8 @@ package lambdas.predicates;
 
 import java.util.function.Predicate;
 
-// Predicate:  public boolean test(param1) 
+// Predicate:<T>
+// boolean test(T t)
 public class PredicateBasics {
     public static void main(String[] args) {
 	Predicate<String> p = t -> t.length() < 4;

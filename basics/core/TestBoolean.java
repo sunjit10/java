@@ -1,4 +1,4 @@
-package basics;
+package basics.core;
 
 /*
  *  1. What does !!someBoolean do

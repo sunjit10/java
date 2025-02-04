@@ -1,4 +1,4 @@
-package basics.core;
+package basics.core.compare;
 
 import java.util.Scanner;
 
