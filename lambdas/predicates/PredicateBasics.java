@@ -6,11 +6,13 @@ import java.util.function.Predicate;
 // boolean test(T t)
 public class PredicateBasics {
     public static void main(String[] args) {
-	Predicate<String> p = t -> t.length() < 4;
-	System.out.println(p.test("howdy"));
-	System.out.println(p.test("yo"));
-	
-	usingOldSchoolWay();
+
+		// Predicate to check if length of String is less than 4
+		Predicate<String> p = t -> t.length() < 4;
+		System.out.println(p.test("howdy"));
+		System.out.println(p.test("yo"));
+
+		usingOldSchoolWay();
     }
     
     private static void usingOldSchoolWay() {

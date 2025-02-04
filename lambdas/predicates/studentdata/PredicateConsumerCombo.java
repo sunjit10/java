@@ -15,32 +15,29 @@ public class PredicateConsumerCombo {
     }
 
     private static void usingPredicate() {
-	List<Student> students = StudentDataBase.getAllStudents();
-	Predicate<Student> gpa = s -> s.getGpa() >= 3.9;
-	Predicate<Student> grade = s -> s.getGradeLevel() >= 3;
-	
-	Consumer<Student> studentInfo = s -> System.out.println("Student is " + s);
-	
-	students.forEach(s -> {
-		if (gpa.and(grade).test(s)) {
-		    studentInfo.accept(s);
-		}
+		List<Student> students = StudentDataBase.getAllStudents();
+		Predicate<Student> gpa = s -> s.getGpa() >= 3.9;
+		Predicate<Student> grade = s -> s.getGradeLevel() >= 3;
 
-	    });
-	
+		Consumer<Student> studentInfo = s -> System.out.println("Student is " + s);
+
+		students.forEach(s -> {
+			if (gpa.and(grade).test(s)) {
+				studentInfo.accept(s);
+			}
+		});
     }
 
     private static void usingBiPredicate() {
-	List<Student> students = StudentDataBase.getAllStudents();
-	BiPredicate<Double, Integer> gpaAndGrade = (gpa, grade) -> gpa >= 3.9 && grade >= 3;
-	
-	Consumer<Student> studentInfo = s -> System.out.println("Student is " + s);
+		List<Student> students = StudentDataBase.getAllStudents();
+		BiPredicate<Double, Integer> gpaAndGrade = (gpa, grade) -> gpa >= 3.9 && grade >= 3;
 
-	students.forEach(s -> {
-		if (gpaAndGrade.test(s.getGpa(), s.getGradeLevel())) {
-		    studentInfo.accept(s);
-		}
-	    });
+		Consumer<Student> studentInfo = s -> System.out.println("Student is " + s);
 
-    }
+		students.forEach(s -> {
+			if (gpaAndGrade.test(s.getGpa(), s.getGradeLevel())) {
+				studentInfo.accept(s);
+			}
+		});
+	}
 }

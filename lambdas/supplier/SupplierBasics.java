@@ -1,7 +1,8 @@
 package lambdas.supplier;
 
 import java.util.function.Supplier;
-import lambdas.data.*;
+import lambdas.data.Student;
+import lambdas.data.StudentDataBase;
 import java.util.List;
     
 /*

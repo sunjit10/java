@@ -2,13 +2,13 @@ package lambdas.supplier;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
-import lambdas.data.*;
-import java.util.List;
+import lambdas.data.Student;
 import java.util.Arrays;
 
 /*
- *  Supplier<T>
- *  T get()
+ * Constructor Reference:
+ *  String::new
+ *  Student::new
  */
 public class ConstructorReference {
     public static void main(String[] args) {
