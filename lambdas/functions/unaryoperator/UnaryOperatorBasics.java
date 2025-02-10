@@ -1,4 +1,4 @@
-package lambdas.functions;
+package lambdas.functions.unaryoperator;
 
 import java.util.function.UnaryOperator;
 
@@ -8,13 +8,13 @@ import java.util.function.UnaryOperator;
  */
 public class UnaryOperatorBasics {
     public static void main(String[] args) {
-	UnaryOperator<String> smithFamily = s -> s +  " Smith";
-	
-	System.out.println("Full Name: " + smithFamily.apply("Mike"));
-	System.out.println("Full Name: " + smithFamily.apply("Jim"));
-	
-	UnaryOperator<Integer> squared = n -> n*n;
-	System.out.println(squared.apply(3));
-	System.out.println(squared.apply(4));
+		UnaryOperator<String> smithFamily = s -> s + " Smith";
+
+		System.out.println("Full Name: " + smithFamily.apply("Mike"));
+		System.out.println("Full Name: " + smithFamily.apply("Jim"));
+
+		UnaryOperator<Integer> squared = n -> n * n;
+		System.out.println(squared.apply(3));
+		System.out.println(squared.apply(4));
     }
 }

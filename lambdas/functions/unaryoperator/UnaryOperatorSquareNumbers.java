@@ -8,10 +8,9 @@ import java.util.ArrayList;
  */
 public class UnaryOperatorSquareNumbers {
     public static void main(String[] args) {
-	List<Integer> numbers = new ArrayList<>(List.of(1,3,4,6,8));
+		List<Integer> numbers = new ArrayList<>(List.of(1, 3, 4, 6, 8));
+		numbers.replaceAll(n -> n * n);
 
-	numbers.replaceAll(n -> n*n);
-
-	numbers.forEach(System.out::println);
+		numbers.forEach(System.out::println);
     }
 }
