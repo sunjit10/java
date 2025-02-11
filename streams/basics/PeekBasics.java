@@ -12,14 +12,19 @@ public class PeekBasics {
 	    .peek(n -> System.out.println(n + ": " + n.getClass()))
 	    .map(n -> n*n)
 	    .peek(n -> System.out.println("Squarred value: " + n))
+	    .map(i -> i * 10)
+	    .peek(n -> System.out.println("Peek2 when *10: " + n))
 	    .collect(Collectors.toList());
-
+	
 	System.out.println(listOfNums);
 
+	// Check above, it traverses from top to bottom one element after other
+	// So you will see: 1 1 10, 3 9 90, 2 4 40, 6 36 360 ....
+	
 	System.out.println("-----------------------------------");
 	peekBeingIgnored();
     }
-
+    
     private static void peekBeingIgnored() {
 	var nums = List.of(10,20,60,20,90,50);
 	// You will see that map, peek will not get executed. Reason is that compiler is smart
