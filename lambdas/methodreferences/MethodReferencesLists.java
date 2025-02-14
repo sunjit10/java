@@ -15,21 +15,20 @@ class Person implements Comparable<Person> {
     public String toString() { return name; }
     
     public int compareTo(Person p) {
-	return name.compareTo(p.name);
+        return name.compareTo(p.name);
     }
 }
 
 public class MethodReferencesLists {
     public static void main(String[] args) {
-	List<Person> persons = new ArrayList<>(List.of(new Person("Jack"), new Person("Albert")));
-	persons.sort(Person::compareTo);
-	persons.forEach(System.out::println);
+        List<Person> persons = new ArrayList<>(List.of(new Person("Jack"), new Person("Albert")));
+        persons.sort(Person::compareTo);
+        persons.forEach(System.out::println);
 
-	System.out.println();
+        System.out.println();
 
-	List<String> fruits = new ArrayList<>(List.of("pear", "banana", "apple", "mango"));
-	fruits.sort(String::compareTo);
-	fruits.forEach(System.out::println);
-	
+        List<String> fruits = new ArrayList<>(List.of("pear", "banana", "apple", "mango"));
+        fruits.sort(String::compareTo);
+        fruits.forEach(System.out::println);
     }
 }

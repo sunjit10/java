@@ -7,15 +7,15 @@ interface Greeter {
 
 public class MethodReferencesBasics {
     public static void main(String[] args) {
-	Greeter g = () -> System.out.println("Hi there");
-	g.greet();
+		Greeter g = () -> System.out.println("Hi there");
+		g.greet();
 
-	// Can do this since sayHello() is a static method
-	Greeter g2 = MethodReferencesBasics::sayHello;
-	g2.greet();
-    }
+		// Can do this since sayHello() is a static method
+		Greeter g2 = MethodReferencesBasics::sayHello;
+		g2.greet();
+	}
 
     private static void sayHello() {
-	System.out.println("Hello");
-    }
+		System.out.println("Hello");
+	}
 }
