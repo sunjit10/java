@@ -1,8 +1,11 @@
-package streams.util;
+package streams.util.shortcircuit;
 
 import java.util.List;
 import java.util.ArrayList;
 
+// This is in shortcircuit package since we don't have to
+// go through the entire stream, the moment the limit condition
+// gets satisfied, the stream traversal ends
 public class LimitStream {
     public static void main(String[] args) {
 	ArrayList<Integer> tens =

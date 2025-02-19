@@ -1,7 +1,11 @@
-package streams.util;
+package streams.util.shortcircuit;
 
 import java.util.List;
 import java.util.ArrayList;
+
+// This is in shortcircuit package since we don't have to
+// go through the entire stream, the moment the condition
+// gets satisfied, the stream traversal ends
 
 // All these methods take a predicate as input and
 // returns a Boolean as output
