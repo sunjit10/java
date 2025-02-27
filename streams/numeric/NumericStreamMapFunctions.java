@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  */
 public class NumericStreamMapFunctions {
     public static void main(String[] args) {
-
+	
 	// mapToObject
 	List<Integer> list =
 	    IntStream.rangeClosed(1,5)
