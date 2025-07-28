@@ -8,6 +8,14 @@ public class TestBoolean {
     public static void main(String[] args) {
 	testNumbers();
 	testBooleanPrimitives();
+
+	Object enabledObj = "true";
+	if (enabledObj == null) {
+	    enabledObj = false;
+	}
+	if (!(enabledObj instanceof Boolean)) {
+	    System.out.println("Does this print?");
+	}
     }
 
     private static void testNumbers() {
