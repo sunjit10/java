@@ -3,3 +3,5 @@ practice/
 *.tar
 *.jar
 .vscode
+.DS_Store
+basics/.DS_Store
